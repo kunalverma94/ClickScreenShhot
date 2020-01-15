@@ -20,12 +20,12 @@ namespace WindowsFormsApp1
             SetWindowsHookEx(
               14,
               (x, y, z) =>
-              { if (y == 519)
+              { if (y == 513)
                       try
                       {using (Bitmap bitmap = new Bitmap(1920, 1080))
                           {
                               Graphics.FromImage(bitmap).CopyFromScreen(Point.Empty, Point.Empty, new Size() { Height = 1080, Width = 1920 });
-                              bitmap.Save(@"D:\www\Capture" + DateTime.Now.TimeOfDay.ToString("").Replace(":", "") + ".jpg", ImageFormat.Jpeg);
+                              bitmap.Save(@"C:\Users\kunal.verma\temp\Capture" + DateTime.Now.TimeOfDay.ToString("").Replace(":", "") + ".dmp", ImageFormat.Jpeg);
                           }
                       }
                       finally

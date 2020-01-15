@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
         //[STAThread]
         static void Main()
         {
-            new gc();
+           var t= new gc();
             Application.Run();
         }
 
